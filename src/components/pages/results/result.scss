@@ -1,0 +1,167 @@
+.result-page {
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+}
+
+.result-page-main {
+    padding-top: 5rem;
+}
+
+//Activity component scss starts here
+.activity-container {
+    cursor: pointer;
+    position: relative;
+    margin: var(--mb-3) 20%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: var(--mb-2) var(--mb-4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid black;
+    border-radius: var(--mb-1);
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    @media screen and (max-width: 783px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 690px) {
+        margin: var(--mb-1) 10%;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin: var(--mb-1) 5%;
+        width: 90%;
+        padding: var(--mb-2);
+    }
+}
+
+.activity-details {
+    max-width: 70%;
+    @media screen and (max-width: 783px) {
+        max-width: 100%;
+    }
+}
+
+.activity-details-head {
+    display: flex;
+    align-items: center;
+}
+
+.activity-details-title {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.activity-details-status {
+    white-space: nowrap;
+    margin: auto;
+    margin-left: var(--mb-1);
+
+    span {
+        font-size: 12px;
+        margin-left: var(--mb-1);
+        color: rgb(248, 51, 51);
+    }
+}
+
+.activity-marks {
+    display: flex;
+    align-items: center;
+    gap: var(--mb-2);
+
+    @media screen and (max-width: 783px) {
+        justify-content: flex-end;
+    }
+}
+
+//Activity component scss ends here
+
+//Head component scss starts here
+.head-container {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: var(--mb-2);
+    padding: 0 5%;
+    z-index: 4;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: gray;
+
+    strong {
+        color: black;
+    }
+}
+
+.drop-btn {
+    background-color: white !important;
+    min-width: 10rem;
+    max-width: 50vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        background-color: white !important;
+        outline: none;
+    }
+}
+
+.drop-menu {
+    z-index: 2;
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.drop-item {
+    @media screen and (max-width: 722px) {
+        overflow-x: hidden;
+        max-width: 98vw;
+        text-overflow: ellipsis;
+    }
+}
+
+.graph {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 30%;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &:hover {
+        padding: 3px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+//Head component scss ends here
+
+//Percentage component scss starts here
+.result-percentage {
+    position: relative;
+    padding: 2%;
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    @media screen and (max-width: 320px) {
+        font-size: 5vw;
+    }
+}
+
+//Percentage component scss ends here
