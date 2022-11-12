@@ -64,9 +64,7 @@ function App() {
                 <div className="spinner">
                     <SyncLoader size={20} margin={5} color="#BD10E0" loading={loading} />
                     {loading ? <div>Loading...</div> : null}
-                </div>  
-
-                
+                </div>
                 <Switch>
                     {!loading && !userAuthentication
                         ? publicRoutes.map((route, index) => {

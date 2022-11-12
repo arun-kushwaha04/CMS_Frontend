@@ -1,0 +1,58 @@
+.post-card-container {
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+.post-card {
+    padding: 20px;
+    cursor: pointer;
+
+    .subtitle {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    h2,
+    h5 {
+        color: black;
+    }
+    .post-auth {
+        font-weight: bold;
+    }
+    .asg-marker {
+        font-weight: bold;
+        color: goldenrod;
+    }
+}
+.card-comment-input {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    width: 100%;
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 16pt;
+    }
+    .comment-submit-btn {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.show-all-btn {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.asg-card:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+}

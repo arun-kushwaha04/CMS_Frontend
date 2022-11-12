@@ -1,0 +1,51 @@
+.submission-modal {
+    position: relative;
+    padding: 4%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    min-width: 50vw;
+    max-width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 90vh;
+    overflow: auto;
+    color: black;
+}
+.submission-modal-files {
+    border: 2px solid black;
+    height: 200px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.submission-modal-input {
+    width: 60px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.submission-modal-files {
+    padding: 5px;
+}
+.submission-modal-file {
+    margin: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+.submission-modal-file-icon {
+    margin-right: 10px;
+}
+.submission-modal-save-marks {
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.submission-modal-save-marks:hover {
+    box-shadow: 0px 0px 30px 0px rgb(201, 201, 201);
+}

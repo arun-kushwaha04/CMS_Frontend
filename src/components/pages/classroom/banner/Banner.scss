@@ -1,0 +1,47 @@
+.banner {
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: goldenrod;
+    margin: 40px 2%;
+    border-radius: 10px;
+    padding: 40px;
+
+    h1,
+    h3 {
+        color: white;
+    }
+
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+        display: block;
+        width: 130px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+.act-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

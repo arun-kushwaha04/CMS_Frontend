@@ -1,0 +1,94 @@
+.overlay {
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-form {
+    position: relative;
+    padding: 4%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    min-width: 50vw;
+    max-width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 90vh;
+    overflow: auto;
+    input {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        padding: 5px;
+    }
+
+    input:focus {
+        border-bottom: 2px solid black;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .form-input {
+        margin: 10px 0;
+    }
+
+    .due-date-field {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    h6 {
+        font-size: 10pt;
+        margin-top: 5px;
+    }
+
+    button {
+        background-color: rgb(91, 91, 255);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .file-input {
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .selected-files {
+        max-width: 1000px;
+    }
+}
+
+.formclose-btn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}

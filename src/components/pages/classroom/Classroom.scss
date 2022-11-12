@@ -1,0 +1,55 @@
+.feed {
+    display: flex;
+    margin: 0 2%;
+    gap: 20px;
+
+    @media only screen and (max-width: 860px) {
+        flex-direction: column-reverse;
+    }
+
+    .left-column {
+        flex: 3;
+    }
+
+    .right-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .class-desc {
+            .desc-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .people-icon-btn {
+                    font-size: 16pt;
+                    cursor: pointer;
+                }
+            }
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+            b {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.no-data-class-img {
+    border-top: 2px solid red;
+    border-radius: 20px;
+
+    img {
+        margin: auto;
+    }
+
+    div {
+        color: rgb(250, 3, 3);
+        font-weight: 600;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+    }
+}
