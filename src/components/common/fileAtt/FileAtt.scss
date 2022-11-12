@@ -1,0 +1,26 @@
+.file-att {
+    background-color: lightgray;
+    display: inline-flex;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+        color: black;
+        font-size: 20px;
+    }
+
+    h5,
+    h6 {
+        font-size: 14px;
+        width: 140px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: black;
+        margin: 0;
+    }
+}

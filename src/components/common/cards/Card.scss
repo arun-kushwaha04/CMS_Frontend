@@ -1,0 +1,122 @@
+$card-height : 13rem;
+.subject-card {
+    margin: var(--mb-3) auto;
+    width: 17rem;
+    min-height: $card-height;
+    background-color: rgb(221, 221, 221);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+    h5,
+    h6 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: var(--mb-1) 0;
+    }
+
+    .card-body {
+        padding: var(--mb-1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+}
+
+#subject-description {
+    color: black;
+    font-weight: 700;
+}
+
+#subject-faculty {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: var(--mb-2);
+}
+
+.subject-body {
+    border-radius: 1rem 4rem 1rem 1rem;
+    padding: var(--mb-1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.822);
+    min-height: $card-height;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        background-color: rgba(245, 245, 245, 0.932);
+    }
+}
+
+.subject-name {
+    font-weight: 700;
+}
+
+.card-bottom {
+    margin: var(--mb-1);
+    display: flex;
+    gap: var(--mb-1);
+    justify-content: flex-end;
+
+    span {
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.822);
+
+        }
+    }
+}
+
+.three-dots {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    color: white;
+
+    button:hover {
+        color: rgba(255, 255, 255, 0.822);
+    }
+}
+
+
+// dropdwn
+.dropbtn {
+    cursor: pointer;
+    padding: 0;
+    width: max-content;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content span {
+    cursor: pointer;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content span:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,12 @@
+.no-data {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    min-height: calc(100vh - var(--header-height) - 5rem);
+    img {
+        margin:auto;
+        width: Max(40vw,50vh);
+    }
+}
