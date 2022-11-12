@@ -1,0 +1,197 @@
+@import "~bootstrap/scss/bootstrap";
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap");
+
+/*========== ThemeColors ==========*/
+$theme: ("red": #ff6969,
+    "purple": #b68ceb,
+    "blue": #72cdf5,
+    "yellow": #f1c248,
+    "green": #7ae24a,
+    "orange": #ff9252,
+    "black": #000000,
+);
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --basic-color: #000000;
+    --first-color: #580818;
+    --first-color-alt: #d4b37b;
+    --title-color: #2f2f2f;
+    --text-color: #707070;
+    --text-color-alt: #737373;
+    --text-color-light: #9f9f9f;
+    --body-color: #f7f7f7;
+    --container-color: #ffffff;
+
+    /*========== ThemeColors ==========*/
+    --red: #ff6969;
+    --purple: #b68ceb;
+    --blue: #4fcaff;
+    --yellow: rgb(255, 230, 0);
+    --green: #60cf2c;
+    --orange: orange;
+
+    /*========== Font and typography ==========*/
+    --body-font: "Roboto", serif;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margins ==========*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--basic-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.app {
+    margin: var(--header-height) 0 0 0;
+    overflow: hidden;
+}
+
+.spinner {
+    top: calc(30% + var(--header-height));
+    left: 20%;
+    right: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+
+    div {
+        font-weight: 700;
+        color: #bd10e0;
+        font-size: 20px;
+    }
+}
+
+.l-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    overflow: hidden;
+    z-index: var(--z-fixed);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.l-main {
+    margin: auto;
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+}
+
+.l-footer {
+    padding: var(--mb-1);
+    background-color: white;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.back-btn {
+    width: fit-content;
+    margin: var(--mb-2);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: 700;
+
+        .back-svg {
+            font-size: 20px;
+        }
+    }
+}
+
+//theme background,border and font
+@each $color,
+$value in $theme {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+@each $color,
+$value in $theme {
+    .font-#{$color} {
+        color: $value !important;
+    }
+}
+
+@each $color,
+$value in $theme {
+    .border-#{$color} {
+        border-color: $value !important;
+    }
+}
