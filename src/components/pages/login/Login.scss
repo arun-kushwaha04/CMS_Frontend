@@ -1,0 +1,73 @@
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url('../../../images//login/5291450.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    min-height: 32rem;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: var(--mb-3) var(--mb-1) 2% 0;
+}
+
+.login-right-head {
+    text-align: center;
+
+    h2 {
+        color: purple;
+        font-weight: 700;
+    }
+
+    h4 {
+        color: purple;
+    }
+
+    hr {
+        margin: var(--mb-3) auto;
+        width: 10rem;
+        height: 15px;
+        background-color: purple;
+        border-radius: 10px;
+    }
+}
+
+.login-form {
+    margin: 2% 2%;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-password {
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+}
+
+@media screen and (max-width: 660px) {
+
+    .login-container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .login-right {
+        display: none;
+    }
+}
