@@ -1,0 +1,15 @@
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.no-classroom-img{
+    margin: auto;
+    width: Max(50vw,50vh);
+}
+.no-classroom-text{
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color:rgb(224, 132, 11)
+}
